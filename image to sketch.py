@@ -1,8 +1,5 @@
 import cv2
-# upload your own pic
-# Load the image using the full path
-image = cv2.imread(r'C:\Users\HEMANTA\OneDrive\Desktop\user.jpg')
-
+image = cv2.imread(r'C:\Users\HEMANTA\OneDrive\Desktop\hemanta cv.jpg')
 if image is None:
     print("Image not found. Please check the path.")
 else:
@@ -12,4 +9,4 @@ else:
     inverted_blur = cv2.bitwise_not(blur)
     sketch = cv2.divide(gray_img, inverted_blur, scale=256.0)
     cv2.imwrite('sketch.png', sketch)
-    print("Sketch saved as sketch.png")
+    print("Sketch saved as sketch2.png")
